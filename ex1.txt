@@ -1,0 +1,14 @@
+Ex1
+
+1NF => no need
+
+2NF
+Table name => column included 
+
+Items =>  itemID , price, itemName
+
+Order => order id, item id , quant, date
+
+Customer => costumerId , orderId , customerName , city
+
+3NF => no need
