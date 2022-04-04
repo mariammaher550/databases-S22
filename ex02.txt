@@ -1,15 +1,12 @@
-1NF:
-we make a new table for:
-(school, teacher),
-and we keep:
-(teacher, course, room, grade, book, publisher, loanDate)
+1NF 
+table name => columns
+schoolEmpolyees => school, teacher
+the rest of colums left=> teacher, course, room, grade, book, publisher, loanDate)
 
 2NF:
-we make a new table for:
-(book, publisher)
-and we keep:
-(school, teacher)
-(teacher, book, course, room, grade, loanDate)
+books => book, publisher
+schoolEmpolyees => school, teacher
+loanBooks = >teacher, book, course, room, grade, loanDate
 
 3NF:
-there's nothing more to change
+no need
