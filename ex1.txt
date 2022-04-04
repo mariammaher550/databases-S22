@@ -7,8 +7,9 @@ Table name => column included
 
 Items =>  itemID , price, itemName
 
-Order => order id, item id , quant, date
+Orders => order id, item id , customerId
 
-Customer => costumerId , orderId , customerName , city
+Customer => costumerId , customerName , city
+orderDetails => customerId, orderId, date
 
 3NF => no need
