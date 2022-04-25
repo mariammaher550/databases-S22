@@ -44,3 +44,18 @@ savepoint T3;
 
 commit;
 
+--adding BankName column
+ALTER TABLE account
+ADD COLUMN BankName VARCHAR;
+
+UPDATE account
+SET BankName = 'SberBank'
+WHERE account_id = 1 OR account_id = 3;
+
+UPDATE account
+SET BankName = 'Tinkoff'
+WHERE account_id = 2;
+
+-- Creating account 4 to add fees into
+insert into account(account_id, user_name, credit, currency, BankName)
+values (4, '{}', 0, '{}', 'N/N');
